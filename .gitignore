@@ -1,0 +1,5 @@
+debian/stsbl-iserv-homepage-php-support/*
+debian/stsbl-iserv-homepage-php-support.debhelper.log
+debian/stsbl-iserv-homepage-php-support.substvars
+debian/files
+debian/debhelper-build-stamp
