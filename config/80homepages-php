@@ -1,6 +1,6 @@
 PHPUsers:
 name		Users who are allowed to use PHP on their homepage
-description	Enter a list of user accounts who should be allowed to use PHP on their homepage. Only allow this for trustful users because it could be a security risk. To change this value, login as root and go to iservcfg > config.
+description	Enter a list of user accounts (not user full names) who should be allowed to use PHP on their homepage. Only allow this for trustful users because it could be a security risk. To change this value, login as root and go to iservcfg > config.
 type		array
 group		Module: User and Group Homepages
 readonly        true
@@ -8,7 +8,7 @@ default		()
 
 PHPGroups:
 name		Groups who are allowed to use PHP on their homepage
-description	Enter a list of group accounts who should be allowed to use PHP on their homepage. Only allow this for trustful groups because it could be a security risk. To change this value, login as root and go to iservcfg > config.
+description	Enter a list of group accounts (not group full names) who should be allowed to use PHP on their homepage. Only allow this for trustful groups because it could be a security risk. To change this value, login as root and go to iservcfg > config.
 type		array
 group		Module: User and Group Homepages
 readonly        true
