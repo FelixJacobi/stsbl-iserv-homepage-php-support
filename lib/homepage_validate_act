@@ -1,0 +1,79 @@
+#!/usr/bin/perl -T -CSDAL
+
+use warnings;
+use strict;
+use IServ::Conf;
+use IServ::DB;
+use IServ::Locale;
+
+IServ::Locale::UseDefLang();
+
+my $fn = "/var/lib/iserv/config/config.pm";
+my @PHPUsers = [];
+my @PHPGroups = [];
+my $output;
+
+if (-r $fn) {
+  require $fn;
+  @PHPUsers = @{$conf->{PHPUsers}};
+  @PHPGroups = @{$conf->{PHPGroups}};
+}
+
+sub valid_act($) {
+  my ($act) = @_;
+
+  return 0 unless $act =~ /^[a-z][a-z0-9._-]*$/;
+  return 1;
+}
+
+sub validate_users() {
+  foreach my $user (@PHPUsers) {
+
+    # check for valid unix account
+    my $valid = valid_act($user);
+
+    $output .= _("Users who are allowed to use PHP on their homepage").
+      ": ".
+      sprintf(_("User \"%s\" is not a valid user account. Did you may enter a full user name instead of an account name?"), $user).
+      "\n"
+    unless $valid;
+
+    my ($query) = IServ::DB::SelectCol("SELECT act FROM users WHERE act = ?", $user);
+    
+    $output .= _("Users who are allowed to use PHP on their homepage").
+      ": ".
+      sprintf(_("User \"%s\" is not an IServ User (No matching user account found)."), $user).
+      "\n" 
+    unless defined($query);
+
+  }
+}
+
+sub validate_groups() {
+  foreach my $group (@PHPGroups) {
+
+    # check for valid unix account
+    my $valid = valid_act($group);
+
+    $output .= _("Groups who are allowed to use PHP on their homepage").
+      ": ".
+      sprintf(_("Group \"%s\" is not a valid group account. Did you may enter a full group name instead of an account name?"), $group).
+      "\n"
+    unless $valid;
+
+    my ($query) = IServ::DB::SelectCol("SELECT act FROM groups WHERE act = ?", $group);
+
+    $output .= _("Groups who are allowed to use PHP on their homepage").
+      ": ".
+      sprintf(_("Group \"%s\" is not an IServ Group (No matching group account)."), $group).
+      "\n"
+    unless defined($query);
+
+  }
+}
+
+validate_users() unless @PHPUsers < 1;
+validate_groups() unless @PHPGroups < 1;
+
+print STDERR $output unless !defined($output);
+exit 1 unless !defined($output);

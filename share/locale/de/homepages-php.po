@@ -12,3 +12,15 @@ msgstr "Geben sie eine Liste von Gruppenaccounts ein, denen es erlaubt sein soll
 
 msgid "Module: User and Group Homepages"
 msgstr "Modul: Benutzer- und Gruppenhomepages"
+
+msgid "User \"%s\" is not a valid user account. Did you may enter a full user name instead of an account name?"
+msgstr "Benutzer \"%s\" ist kein gültiger Benutzer-Account. Haben sie möglicherweise den vollen Namen anstelle des Accountnamens angegeben?"
+
+msgid "User \"%s\" is not an IServ User (No matching user account found)."
+msgstr "Benutzer \"%s\" ist kein IServ-Benutzer (kein passender Benutzeraccount gefunden)."
+
+msgid "Group \"%s\" is not a valid group account. Did you may enter a full group name instead of an account name?"
+msgstr "Gruppe \"%s\" ist kein gültiger Gruppen-Account. Haben sie möglicherweise den vollen Namen anstelle des Accountnamens angegeben?"
+
+msgid "Group \"%s\" is not an IServ Group (No matching group account)."
+msgstr "Gruppe \"%s\" ist keine IServ-Gruppe (kein passender Gruppenaccount gefunden)."
