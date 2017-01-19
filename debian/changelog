@@ -1,3 +1,10 @@
+stsbl-iserv-homepage-php-support (17.01.19-0) experimental; urgency=medium
+
+  [ Felix Jacobi ]
+  * Fixed packaging.
+
+ -- Stadtteilschule Blankenese <repository@stsbl.de>  Thu, 19 Jan 2017 20:25:15 +0100
+
 stsbl-iserv-homepage-php-support (17.01.18-0) experimental; urgency=medium
 
   [ Felix Jacobi ]
