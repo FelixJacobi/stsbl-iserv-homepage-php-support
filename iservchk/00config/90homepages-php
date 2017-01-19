@@ -1,0 +1,2 @@
+Shell "validate PHPGroups/PHPUsers"
+  "/usr/lib/iserv/homepage_validate_act"
