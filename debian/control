@@ -15,4 +15,4 @@ Description: Homepage-Modul für IServ - PHP-Unterstützung
  Bei diesem Modul wurde die Sicherheit bei der Verwendung von PHP auf den Benutzer- und Gruppenhomepages verbessert, es sollte daher anstelle des alten Moduls verwendet werden.
  .
  Die Benutzer und Gruppen, die PHP verwenden dürfen, können aus Sicherheitsgründen ausschließlich als root unter iservcfg > config > PHPUsers beziehungsweise PHPGroups eingestellt werden. Über die iservcfg-Weboberfläche ist die aktuelle Einstellung einsehbar, aber nicht änderbar.
-Tag: suite::iserv:portal, role::plugin, status::highlighted, implemented-in::perl
+Tag: suite::iserv:portal, role::plugin, implemented-in::perl
