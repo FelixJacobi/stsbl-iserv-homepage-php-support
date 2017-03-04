@@ -1,3 +1,11 @@
+stsbl-iserv-homepage-php-support (17.03.04-0) experimental; urgency=medium
+
+  [ Felix Jacobi ]
+  * Fixed l10n.
+  * Removed highlighted status.
+
+ -- Stadtteilschule Blankenese <repository@stsbl.de>  Sat, 04 Mar 2017 23:41:46 +0100
+
 stsbl-iserv-homepage-php-support (17.01.19-0) experimental; urgency=medium
 
   [ Felix Jacobi ]
