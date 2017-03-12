@@ -2,13 +2,13 @@ msgid "Users who are allowed to use PHP on their homepage"
 msgstr "Benutzer, die PHP auf ihrer Homepage benutzen dürfen"
 
 msgid "Enter a list of user accounts (not user full names) who should be allowed to use PHP on their homepage. Only allow this for trustful users because it could be a security risk. To change this value, login as root and go to iservcfg > config."
-msgstr "Geben Sie eine Liste von Benutzeraccounts (keine Benutzernamen) ein, denen es erlaubt sein soll, PHP auf ihrer Homepage zu benutzen. Erlauben sie dies nur für vertrauenswürdige Benutzer, da es ein Sicherheitsrisiko sein könnte. Um diesen Wert zu ändern, melden sie sich als root an und gehen sie zu iservcfg > config."
+msgstr "Geben Sie eine Liste von Benutzeraccounts (keine Benutzernamen) ein, denen es erlaubt sein soll, PHP auf ihrer Homepage zu benutzen. Erlauben Sie dies nur für vertrauenswürdige Benutzer, da es ein Sicherheitsrisiko sein könnte. Um diesen Wert zu ändern, melden Sie sich als root an und gehen Sie zu iservcfg > config."
 
 msgid "Groups who are allowed to use PHP on their homepage"
 msgstr "Gruppen, die PHP auf ihrer Homepage benutzen dürfen"
 
 msgid "Enter a list of group accounts (not group full names) who should be allowed to use PHP on their homepage. Only allow this for trustful groups because it could be a security risk. To change this value, login as root and go to iservcfg > config."
-msgstr "Geben Sie eine Liste von Gruppenaccounts (keine Gruppenname) ein, denen es erlaubt sein soll, PHP auf ihrer Homepage zu benutzen. Erlauben sie dies nur für für vertrauenswürdige Gruppen, da es ein Sicherheitsrisiko sein könnte. Um diesen Wert zu ändern, melden sie sich als root an und gehen sie zu iservcfg > config."
+msgstr "Geben Sie eine Liste von Gruppenaccounts (keine Gruppenname) ein, denen es erlaubt sein soll, PHP auf ihrer Homepage zu benutzen. Erlauben Sie dies nur für für vertrauenswürdige Gruppen, da es ein Sicherheitsrisiko sein könnte. Um diesen Wert zu ändern, melden Sie sich als root an und gehen Sie zu iservcfg > config."
 
 msgid "Module: User and Group Homepages"
 msgstr "Modul: Benutzer- und Gruppenhomepages"
