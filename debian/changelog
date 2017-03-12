@@ -1,3 +1,11 @@
+stsbl-iserv-homepage-php-support (17.03.12-0) experimental; urgency=medium
+
+  [ Felix Jacobi ]
+  * Fixed the problem, that the validations errors are shown in english instead of the default language.
+  * l10n: Fixed german spelling issues.
+
+ -- Stadtteilschule Blankenese <repository@stsbl.de>  Sun, 12 Mar 2017 19:08:10 +0100
+
 stsbl-iserv-homepage-php-support (17.03.04-0) experimental; urgency=medium
 
   [ Felix Jacobi ]
