@@ -5,7 +5,10 @@ use strict;
 use IServ::Conf;
 use IServ::DB;
 use IServ::Locale;
+use POSIX;
 
+POSIX::setlocale(POSIX::LC_CTYPE, $conf->{DefLang} . ".UTF-8");
+POSIX::setlocale(POSIX::LC_MESSAGES, $conf->{DefLang} . ".UTF-8");
 IServ::Locale::UseDefLang();
 
 my $fn = "/var/lib/iserv/config/config.pm";
