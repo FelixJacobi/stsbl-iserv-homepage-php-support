@@ -11,16 +11,10 @@ POSIX::setlocale(POSIX::LC_CTYPE, $conf->{DefLang} . ".UTF-8");
 POSIX::setlocale(POSIX::LC_MESSAGES, $conf->{DefLang} . ".UTF-8");
 IServ::Locale::UseDefLang();
 
-my $fn = "/var/lib/iserv/config/config.pm";
-my @PHPUsers = [];
-my @PHPGroups = [];
 my $output;
 
-if (-r $fn) {
-  require $fn;
-  @PHPUsers = @{$conf->{PHPUsers}};
-  @PHPGroups = @{$conf->{PHPGroups}};
-}
+my @PHPUsers = @{$conf->{PHPUsers}};
+my @PHPGroups = @{$conf->{PHPGroups}};
 
 sub valid_act($) {
   my ($act) = @_;

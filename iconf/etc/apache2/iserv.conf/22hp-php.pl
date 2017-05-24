@@ -4,19 +4,11 @@ use warnings;
 use strict;
 use IServ::Conf;
 
-my $fn = "/var/lib/iserv/config/config.pm";
-my $UserHomepages = 1;
 my $type;
 my $act;
-my @PHPUsers = [];
-my @PHPGroups = [];
-
-if (-r $fn) {
-  require $fn;
-  $UserHomepages = $conf->{UserHomepages};
-  @PHPUsers = @{$conf->{PHPUsers}};
-  @PHPGroups = @{$conf->{PHPGroups}};
-}
+my $UserHomepages = $conf->{UserHomepages};
+my @PHPUsers = @{$conf->{PHPUsers}};
+my @PHPGroups = @{$conf->{PHPGroups}};
 
 sub print_config() {
   print "  <Directory /$type/$act/Homepage/>\n";
@@ -58,7 +50,7 @@ sub www_php() {
   $type = "group";
   foreach my $group (@PHPGroups) {
     # treat www group separatly, because this sub 
-    # will also called if hoemapges are disable in general.
+    # will also called if homepages are disable in general.
     next unless $group eq "www";
     print "  # WWW Group allowed to use PHP via iservcfg.\n";
     $act = $group;
