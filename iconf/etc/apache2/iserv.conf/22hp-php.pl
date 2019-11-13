@@ -67,6 +67,6 @@ sub user_php() {
   }
 }
 
-group_php() unless @PHPGroups < 1 or $UserHomepages == 0;
+group_php() unless @PHPGroups < 1 or not $UserHomepages;
 www_php() unless @PHPGroups < 1;
-user_php() unless @PHPUsers < 1 or $UserHomepages == 0;
+user_php() unless @PHPUsers < 1 or not $UserHomepages;
