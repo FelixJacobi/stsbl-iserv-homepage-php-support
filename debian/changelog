@@ -1,3 +1,10 @@
+stsbl-iserv-homepage-php-support (20.08.02-1) testing; urgency=medium
+
+  * Bumped copyright
+  * Updated locale handling to use genpo
+
+ -- Felix Jacobi <Felix@jacobi-hamburg.net>  Sun, 02 Aug 2020 06:43:05 +0200
+
 stsbl-iserv-homepage-php-support (19.11.13-1) stable; urgency=medium
 
   * Added lintian overrides
